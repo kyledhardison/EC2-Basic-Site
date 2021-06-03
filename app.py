@@ -106,7 +106,6 @@ def register():
 
 @app.route("/uploads/<user>/<filename>", methods=["GET"])
 def getfile(user, filename):
-    print(user, filename)
     try:
         return send_file(os.path.join("./uploads/", user, filename),
                                       as_attachment=True)
