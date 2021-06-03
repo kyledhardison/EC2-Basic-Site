@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <title>Register</title>
+    </head>
+    <body>
+        {% if message %}
+        <h2 style="color:red">{{ message }}</h2>
+        {% endif %}
+        <h2>Register New Account:</h2>
+        <form enctype="multipart/form-data" method="post">
+            <table>
+                <tr>
+                    <td>First Name:</td>
+                    <td><input type="text" name="firstname" required></td>
+                </tr>
+                <tr>
+                    <td>Last Name:</td>
+                    <td><input type="text" name="lastname" required></td>
+                </tr>
+                <tr>
+                    <td>Email:</td>
+                    <td><input type="text" name="email" required></td>
+                </tr>
+                <tr>
+                    <td>File:</td>
+                    <td><input type="file" name="file" required></td>
+                </tr>
+                <tr>
+                    <td colspan="3" style="line-height:15px">&nbsp;</td>
+                </tr>
+                <tr>
+                    <td>Username:</td>
+                    <td><input type="text" name="username" required></td>
+                </tr>
+                <tr>
+                    <td>Password:</td> 
+                    <td><input type="password" name="password" required></td>
+                </tr>
+            </table>
+            <input type="submit"></p>
+        </form>
+    </body>
+</html>

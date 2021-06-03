@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>Login</title>
+    </head>
+    <body>
+        {% if message %}
+        <h2 style="color:red">{{ message }}</h2>
+        {% endif %}
+        <h2>Login With Existing Account</h2>
+        <form method="post">
+            <table>
+                <tr>
+                    <td>Username:</td>
+                    <td><input type="text" name="username" required></td>
+                </tr>
+                <tr>
+                    <td>Password:</td>
+                    <td><input type="password" name="password" required></td>
+                </tr>
+            </table>
+            <input type="submit">
+        </form>
+    </body>
+</html>
+
